@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "neighborsSpec.js",
+  "sourceRoot": "..",
+  "sources": [
+    "test/neighborsSpec.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAA,MAAA,EAAA;;AAAA,CAAA,CAAC,SAAD,CAAA,GAAc,OAAA,CAAQ,cAAR,CAAd;;AACA,MAAA,GAAS,OAAA,CAAQ,QAAR;;AAET,QAAA,CAAS,WAAT,EAAsB,QAAA,CAAA,CAAA;EACpB,EAAA,CAAG,+BAAH,EAAoC,QAAA,CAAA,CAAA;WAClC,MAAM,CAAC,KAAP,CACE,SAAA,CAAU,CAAC,CAAD,EAAI,CAAJ,EAAO,CAAP,CAAV,EAAqB,CAArB,EAAwB,CAAxB,CADF,EAEE,CAFF;EADkC,CAApC;SAKA,EAAA,CAAG,oCAAH,EAAyC,QAAA,CAAA,CAAA;WACvC,MAAM,CAAC,KAAP,CACE,SAAA,CAAU,CAAC,CAAD,EAAI,CAAJ,EAAO,CAAP,CAAV,EAAqB,CAArB,EAAwB,CAAxB,CADF,EAEE,CAFF;EADuC,CAAzC;AANoB,CAAtB;;AAHA",
+  "sourcesContent": [
+    "{neighbors} = require('../neighbors')\nassert = require('assert')\n\ndescribe 'neighbors', () ->\n  it 'returns 0 for empty row array', ->\n    assert.equal(\n      neighbors([0, 0, 0], 0, 0),\n      0\n    )\n  it 'returns 1 for [0, 1, 0] position 0', ->\n    assert.equal(\n      neighbors([0, 1, 0], 0, 0),\n      1\n    )\n#describe 'Array', () ->\n#  describe '#indexOf()', () ->\n#    it 'should return -1 when the value is not present', () ->\n#      assert.equal [1, 2, 3].indexOf(4), -1\n"
+  ]
+}

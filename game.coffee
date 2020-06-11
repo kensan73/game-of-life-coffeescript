@@ -24,6 +24,6 @@ game = new Life([
   [0, 0, 0, 0, 0]
 ])
 
-console.log(game + '')
+#console.log(game + '')
 game.next()
-console.log(game + '')
+#console.log(game + '')
